@@ -11,11 +11,14 @@
     "format:check": "prettier --check \"src/**/*.{vue,ts,js,json,css,md}\""
   },
   "dependencies": {
+    "@apollo/client": "^3.13.8",
     "@primevue/themes": "^4.3.6",
     "@tailwindcss/postcss": "^4.1.11",
+    "@vue/apollo-composable": "^4.2.2",
     "@vue/runtime-core": "^3.5.17",
     "autoprefixer": "^10.4.21",
     "axios": "^1.10.0",
+    "graphql": "^16.11.0",
     "pinia": "^3.0.3",
     "postcss": "^8.5.6",
     "primeicons": "^7.0.0",
