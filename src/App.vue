@@ -3,15 +3,17 @@
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="flex flex-col items-center justify-center min-h-screen p-4">
+    <div class="mb-8 flex gap-4">
+      <a href="https://vite.dev" target="_blank">
+        <img src="/vite.svg" class="logo w-24 h-24" alt="Vite logo" />
+      </a>
+      <a href="https://vuejs.org/" target="_blank">
+        <img src="./assets/vue.svg" class="logo vue w-24 h-24" alt="Vue logo" />
+      </a>
+    </div>
+    <HelloWorld msg="Vite + Vue" />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
