@@ -1,18 +1,14 @@
 <script setup lang="ts">
-  import HelloWorld from './components/HelloWorld.vue'
+  // Removed HelloWorld import
+  import { navigateTo } from './route'
 </script>
 
 <template>
   <div class="flex flex-col items-center justify-center min-h-screen p-4">
-    <div class="mb-8 flex gap-4">
-      <a href="https://vite.dev" target="_blank">
-        <img src="/vite.svg" class="logo w-24 h-24" alt="Vite logo" />
-      </a>
-      <a href="https://vuejs.org/" target="_blank">
-        <img src="./assets/vue.svg" class="logo vue w-24 h-24" alt="Vue logo" />
-      </a>
-    </div>
-    <HelloWorld msg="Vite + Vue" />
+    <button @click="navigateTo('Home')">Go to Home</button>
+    <button @click="navigateTo('Dashboard')">Go to Dashboard</button>
+    <button @click="navigateTo('NotFound')">Go to NotFound</button>
+    <router-view />
   </div>
 </template>
 

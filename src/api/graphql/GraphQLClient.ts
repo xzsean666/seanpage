@@ -3,8 +3,7 @@ import {
   InMemoryCache,
   HttpLink,
   ApolloLink,
-  concat,
-  from,
+  from as fromApollo,
 } from '@apollo/client/core'
 import type { ApolloQueryResult, FetchResult } from '@apollo/client/core'
 import type { DocumentNode } from 'graphql'
@@ -25,7 +24,7 @@ class GraphQLClient {
     // Combine provided links with the HTTP link
     let link: ApolloLink
     if (config.links && config.links.length > 0) {
-      link = from([...config.links, httpLink])
+      link = fromApollo([...config.links, httpLink])
     } else {
       link = httpLink
     }
