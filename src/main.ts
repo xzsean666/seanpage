@@ -19,4 +19,23 @@ app.use(PrimeVue, {
     preset: Aura, // 使用Aura主题预设
   },
 })
+
+router.afterEach(to => {
+  // Update page title
+  document.title = (to.meta?.title as string) || 'Default Title'
+
+  // Update favicon
+  const faviconLink = document.getElementById('favicon') as HTMLLinkElement
+  if (faviconLink) {
+    // Example: change favicon based on route name
+    if (to.name === 'Home') {
+      faviconLink.href = '/sean.jpeg' // Or any other favicon for Home
+    } else if (to.name === 'Dashboard') {
+      faviconLink.href = '/vue.svg' // Or any other favicon for Dashboard
+    } else {
+      faviconLink.href = '/vite.svg' // Default favicon
+    }
+  }
+})
+
 app.mount('#app')

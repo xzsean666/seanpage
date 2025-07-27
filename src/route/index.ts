@@ -5,21 +5,25 @@ const routes = [
     path: '/',
     name: 'Home',
     component: () => import('../views/Home.vue'), // Changed to Home.vue
+    meta: { title: "Sean's Home Page" },
   },
   {
     path: '/dashboard',
     name: 'Dashboard',
     component: () => import('../views/Dashboard.vue'),
+    meta: { title: 'Dashboard' },
   },
   {
     path: '/not-found',
     name: 'NotFound',
     component: () => import('../views/NotFound.vue'),
+    meta: { title: 'Page Not Found' },
   },
   {
     path: '/:catchAll(.*)',
     name: 'CatchAll',
     component: () => import('../views/NotFound.vue'),
+    meta: { title: 'Page Not Found' },
   },
   // Add more routes here as needed
 ]

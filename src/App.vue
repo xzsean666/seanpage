@@ -5,9 +5,9 @@
 
 <template>
   <div class="flex flex-col items-center justify-center min-h-screen p-4">
-    <button @click="navigateTo('Home')">Go to Home</button>
+    <!-- <button @click="navigateTo('Home')">Go to Home</button>
     <button @click="navigateTo('Dashboard')">Go to Dashboard</button>
-    <button @click="navigateTo('NotFound')">Go to NotFound</button>
+    <button @click="navigateTo('NotFound')">Go to NotFound</button> -->
     <router-view />
   </div>
 </template>

@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import path from 'path'; // 新增导入
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import path from 'path' // 新增导入
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -9,6 +9,9 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
+  },
+  css: {
+    postcss: './postcss.config.cjs',
   },
   build: {
     cssMinify: true,
@@ -26,4 +29,4 @@ export default defineConfig({
       },
     },
   },
-});
+})
