@@ -12,7 +12,7 @@ const requestInterceptorId = api.setRequestInterceptor(
     // In a real application, you might fetch a token from localStorage or a Pinia store
     const authToken = localStorage.getItem('authToken')
     if (authToken) {
-      config.headers = config.headers || {}
+      // config.headers = config.headers || {}
       config.headers.Authorization = `Bearer ${authToken}`
     }
     console.log('Request Sent:', config.method?.toUpperCase(), config.url)
