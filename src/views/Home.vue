@@ -31,8 +31,7 @@
           <strong>代码风格简洁</strong>：倾向于模块化和复用，写注释简洁明了。
         </li>
         <li>
-          <strong>高效开发者</strong
-          >：熟练掌握环境配置、错误排查、依赖管理等各种细节问题。
+          <strong>高效开发者</strong>：熟练掌握环境配置、错误排查、依赖管理等各种细节问题。
         </li>
         <li>
           <strong>注重性能和细节</strong>：如分析 GPU
@@ -52,7 +51,9 @@
       </ul>
       <p>总结来源于ChatGPT</p>
     </div>
-    <div class="mt-auto h-[50px] text-center">666</div>
+    <div class="mt-auto h-[50px] text-center">
+      <a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2025155807号</a>
+    </div>
   </div>
 </template>
 
